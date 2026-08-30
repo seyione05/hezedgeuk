@@ -23,7 +23,7 @@ npm ci
 npm run build
 ```
 
-The website uses the Vinext/Vite runtime and produces Cloudflare-compatible output.
+The website uses the native Next.js runtime and can be deployed directly to Vercel.
 
 ## Recommended hosting options
 
