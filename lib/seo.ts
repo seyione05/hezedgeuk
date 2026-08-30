@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const siteUrl = new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://hezedge.com");
+export const siteUrl = new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://hezedge.co.uk");
 export const siteName = "HezEdge Consulting";
 export const defaultDescription = "Web and app development, SEO, AI automation, cloud infrastructure, systems integration and technology consulting for ambitious businesses.";
 
