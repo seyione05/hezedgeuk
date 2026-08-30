@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 462" role="img" aria-labelledby="title desc">
+  <title id="title">HezEdge Consulting</title>
+  <desc id="desc">HezEdge Consulting logo in purple and teal</desc>
+  <g fill="#78248a">
+    <path d="M50 231 197 50h98L184 193h75l116-143h108L331 231l152 181H375L259 269h-75l111 143h-98Z"/>
+  </g>
+  <path fill="#33b6c8" d="m407 231 157-181h113l77 93h-112l-25-30-102 118 102 120 25-32h112l-77 93H554Z"/>
+  <g fill="#78248a" font-family="Montserrat, Arial, sans-serif" font-weight="800">
+    <text x="790" y="266" font-size="232" letter-spacing="-9">HEZEDGE</text>
+  </g>
+  <text x="797" y="366" fill="#33b6c8" font-family="Montserrat, Arial, sans-serif" font-size="97" font-weight="700" letter-spacing="24">CONSULTING</text>
+</svg>
