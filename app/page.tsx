@@ -1,7 +1,14 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { ArrowRight, Check, Search, Sparkles } from "lucide-react";
 import { SiteHeader, SiteFooter, ServiceCard, ProofStrip } from "@/components/site-shell";
 import { services, testimonials } from "@/lib/site-data";
+import { defaultDescription, pageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = pageMetadata({
+  title: "Practical Technology for Business Growth",
+  description: defaultDescription,
+});
 
 export default function Home(){return <main>
   <SiteHeader/>

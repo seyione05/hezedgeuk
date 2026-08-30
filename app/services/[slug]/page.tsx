@@ -1,8 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArrowRight, Check, ChevronRight } from "lucide-react";
 import { SiteFooter, SiteHeader } from "@/components/site-shell";
 import { services } from "@/lib/site-data";
+import { pageMetadata } from "@/lib/seo";
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}): Promise<Metadata> {
+  const {slug}=await params;
+  const service=services.find(item=>item.slug===slug);
+  return service ? pageMetadata({ title: service.title, description: service.promise, path: `/services/${service.slug}` }) : {};
+}
 export function generateStaticParams(){return services.map(service=>({slug:service.slug}))}
 export default async function ServicePage({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const service=services.find(item=>item.slug===slug);if(!service)notFound();const Icon=service.icon;return <main><SiteHeader/>
 <section className="sub-hero"><div className="shell"><div className="breadcrumbs"><Link href="/">Home</Link><ChevronRight size={14}/><span>{service.title}</span></div><div className="sub-hero-grid"><div><p className="eyebrow"><Icon size={16}/> {service.kicker}</p><h1>{service.promise}</h1><p className="lede">{service.problem}</p><div className="hero-actions"><Link className="button button-primary" href={`/contact?service=${service.slug}`}>Book your {service.entry.toLowerCase()} <ArrowRight size={18}/></Link><Link className="button button-secondary" href="/#services">Compare services</Link></div></div><aside className="fit-card"><span>Best suited to</span><h2>{service.audience}</h2><p>Not sure whether this is the right service? Tell us what you are trying to achieve and we will guide you.</p></aside></div></div></section>

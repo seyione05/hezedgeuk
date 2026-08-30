@@ -1,4 +1,7 @@
 import { SiteFooter, SiteHeader } from "@/components/site-shell";
 import { ContactForm } from "@/components/contact-form";
 import { Mail, Clock, ShieldCheck } from "lucide-react";
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+export const metadata: Metadata = pageMetadata({ title: "Contact", description: "Contact HezEdge Consulting to discuss web development, SEO, AI automation, cloud infrastructure or technology consulting.", path: "/contact" });
 export default function ContactPage(){return <main><SiteHeader/><section className="sub-hero contact-hero"><div className="shell contact-layout"><div><p className="eyebrow">Start a conversation</p><h1>What would you like your business to do better?</h1><p className="lede">Tell us about the goal, problem or idea. We will help identify the appropriate next step without burying you in technical language.</p><div className="contact-points"><div><Mail size={19}/><span><strong>Email us directly</strong><a href="mailto:info@hezedge.com">info@hezedge.com</a></span></div><div><Clock size={19}/><span><strong>Thoughtful response</strong><small>We will review the context before replying.</small></span></div><div><ShieldCheck size={19}/><span><strong>No hard sell</strong><small>A practical conversation about fit and next steps.</small></span></div></div></div><ContactForm/></div></section><SiteFooter/></main>}
