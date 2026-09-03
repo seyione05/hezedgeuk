@@ -10,7 +10,9 @@ export const services = [
 ] as const;
 export type Service = (typeof services)[number];
 export const testimonials = [
-  { quote:"They were very patient, easy to communicate with, and did not fill my head with technical jargon.", name:"Yemi Ayeni", context:"Website client" },
-  { quote:"They listened patiently and spent ample time understanding our products and message.", name:"Tola Babs", context:"Digital delivery client" },
-  { quote:"Their thought process goes deeper than the latest technology. It is about what makes good business sense.", name:"Wale Thomas", context:"Technology consulting client" }
+  { quote:"HezEdge took the time to understand our work in renewable energy and turned that into a clear, professional digital presence. The process was organised, responsive and easy to follow from start to finish.", name:"Yemi Ayeni", context:"CorePower Ltd" },
+  { quote:"They understood the pace and standards we work to as a digital agency. Their advice was practical, their communication was straightforward, and they were focused on delivering something that genuinely supported our business.", name:"Tola Babalola", context:"Wildreams" },
+  { quote:"For an immigration consultancy, clarity and trust are essential. HezEdge helped us present our services in a way that feels credible, accessible and aligned with the people we support.", name:"Kola Y.", context:"KOY Immigration" },
+  { quote:"They approached our mental health clinic with care and attention to detail. The team listened closely, communicated clearly and created a digital experience that feels appropriate for our clients.", name:"Dr. Simi A.", context:"Transcend Mental Health & Wellness" },
+  { quote:"HezEdge brought structure to our digital needs and made the next steps clear. They were thoughtful, dependable and focused on what would be most useful for our learners and wider community.", name:"Efe O.", context:"Daystar Leadership Academy" }
 ];
