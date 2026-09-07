@@ -28,5 +28,5 @@ export const organizationSchema = {
   name: siteName,
   url: siteUrl.href,
   logo: new URL("/hezedge-logo.svg", siteUrl).href,
-  email: "info@hezedge.com",
+  email: "info@hezedge.co.uk",
 };

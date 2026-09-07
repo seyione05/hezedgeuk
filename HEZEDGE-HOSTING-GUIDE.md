@@ -48,7 +48,7 @@ Attach the ZIP to a Codex project and instruct Codex to:
 
 ## Enquiry form
 
-The enquiry form currently prepares an email to `info@hezedge.com` in the visitor's email application. This requires no server credentials.
+The enquiry form currently prepares an email to `info@hezedge.co.uk` in the visitor's email application. This requires no server credentials.
 
 For direct background submission, connect the form to a transactional email provider or CRM and add spam protection before public launch.
 
