@@ -11,7 +11,7 @@ export const metadata: Metadata = pageMetadata({
 });
 
 const selectedExperience = [
-  { name: "JaSure", href: "https://jasure.ca/", description: "Management consulting firm", logo: "/client-logos/jasure.png" },
+  { name: "TecInvest Advisory Ltd", href: "https://techadvisory.com.ng/", description: "Finance, investment and business advisory", logo: "/client-logos/tecinvest-advisory.png" },
   { name: "KOY Immigration", href: "https://koyimmigration.com/", description: "Canadian immigration services", logo: "/client-logos/koy-immigration.png" },
   { name: "Daystar Leadership Academy", href: "https://dlaonline.org/", description: "Leadership development and learning", logo: "/client-logos/dla-online.png" },
   { name: "SB Visas", href: "https://sbvisas.com/", description: "Visa and immigration support", logo: "/client-logos/sb-visas.png" },
